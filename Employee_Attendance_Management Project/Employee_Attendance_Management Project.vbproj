@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9D183690-8781-4F43-A979-E5D4BC99153F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Employee_Attendance_Management_Project.My.MyApplication</StartupObject>
+    <RootNamespace>Employee_Attendance_Management_Project</RootNamespace>
+    <AssemblyName>Employee_Attendance_Management Project</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Employee_Attendance_Management Project.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Employee_Attendance_Management Project.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add Modify Data Page.Designer.vb">
+      <DependentUpon>Add Modify Data Page.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Add Modify Data Page.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add New Employee Page.Designer.vb">
+      <DependentUpon>Add New Employee Page.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Add New Employee Page.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Login Page.Designer.vb">
+      <DependentUpon>Admin Login Page.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Login Page.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Page.Designer.vb">
+      <DependentUpon>Admin Page.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Page.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin1DataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>admin1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="All Employee Personal Detail Page.Designer.vb">
+      <DependentUpon>All Employee Personal Detail Page.vb</DependentUpon>
+    </Compile>
+    <Compile Include="All Employee Personal Detail Page.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendance Page.Designer.vb">
+      <DependentUpon>Attendance Page.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance Page.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Change Password Page.Designer.vb">
+      <DependentUpon>Change Password Page.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Change Password Page.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="connect Mails.vb" />
+    <Compile Include="DatabaseConnection.vb" />
+    <Compile Include="Employee Forget Password Page.Designer.vb">
+      <DependentUpon>Employee Forget Password Page.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Employee Forget Password Page.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee Login Page.Designer.vb">
+      <DependentUpon>Employee Login Page.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Employee Login Page.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee Mark Attendance Page.Designer.vb">
+      <DependentUpon>Employee Mark Attendance Page.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Employee Mark Attendance Page.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee Page.Designer.vb">
+      <DependentUpon>Employee Page.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Employee Page.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forget Password Pagevb.Designer.vb">
+      <DependentUpon>Forget Password Pagevb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forget Password Pagevb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Month Calendar Page.Designer.vb">
+      <DependentUpon>Month Calendar Page.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Month Calendar Page.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Particular employee Personal detail Page.Designer.vb">
+      <DependentUpon>Particular employee Personal detail Page.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Particular employee Personal detail Page.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Show Employee Attendance In DataGridView.Designer.vb">
+      <DependentUpon>Show Employee Attendance In DataGridView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Show Employee Attendance In DataGridView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Show Employee Attendance Page.Designer.vb">
+      <DependentUpon>Show Employee Attendance Page.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Show Employee Attendance Page.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Show Employee Personal Detail Page.Designer.vb">
+      <DependentUpon>Show Employee Personal Detail Page.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Show Employee Personal Detail Page.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="To_Date_Page.Designer.vb">
+      <DependentUpon>To_Date_Page.vb</DependentUpon>
+    </Compile>
+    <Compile Include="To_Date_Page.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mark Attendace Page.Designer.vb">
+      <DependentUpon>Mark Attendace Page.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mark Attendace Page.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mdDatabaseQuery.vb" />
+    <Compile Include="ModifyEmployeeDataPage.Designer.vb">
+      <DependentUpon>ModifyEmployeeDataPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyEmployeeDataPage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Show Employee Data Page.Designer.vb">
+      <DependentUpon>Show Employee Data Page.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Show Employee Data Page.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Attendance Page.Designer.vb">
+      <DependentUpon>View Attendance Page.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View Attendance Page.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Add Modify Data Page.resx">
+      <DependentUpon>Add Modify Data Page.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add New Employee Page.resx">
+      <DependentUpon>Add New Employee Page.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Login Page.resx">
+      <DependentUpon>Admin Login Page.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Page.resx">
+      <DependentUpon>Admin Page.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="All Employee Personal Detail Page.resx">
+      <DependentUpon>All Employee Personal Detail Page.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Change Password Page.resx">
+      <DependentUpon>Change Password Page.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee Forget Password Page.resx">
+      <DependentUpon>Employee Forget Password Page.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee Login Page.resx">
+      <DependentUpon>Employee Login Page.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee Mark Attendance Page.resx">
+      <DependentUpon>Employee Mark Attendance Page.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee Page.resx">
+      <DependentUpon>Employee Page.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forget Password Pagevb.resx">
+      <DependentUpon>Forget Password Pagevb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mark Attendace Page.resx">
+      <DependentUpon>Mark Attendace Page.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyEmployeeDataPage.resx">
+      <DependentUpon>ModifyEmployeeDataPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Month Calendar Page.resx">
+      <DependentUpon>Month Calendar Page.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Particular employee Personal detail Page.resx">
+      <DependentUpon>Particular employee Personal detail Page.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Show Employee Attendance In DataGridView.resx">
+      <DependentUpon>Show Employee Attendance In DataGridView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Show Employee Attendance Page.resx">
+      <DependentUpon>Show Employee Attendance Page.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Show Employee Data Page.resx">
+      <DependentUpon>Show Employee Data Page.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Show Employee Personal Detail Page.resx">
+      <DependentUpon>Show Employee Personal Detail Page.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="To_Date_Page.resx">
+      <DependentUpon>To_Date_Page.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Attendance Page.resx">
+      <DependentUpon>View Attendance Page.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="admin1DataSet.xsc">
+      <DependentUpon>admin1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="admin1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>admin1DataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="admin1DataSet.xss">
+      <DependentUpon>admin1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Outlook">
+      <Guid>{00062FFF-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>9</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
